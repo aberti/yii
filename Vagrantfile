@@ -29,6 +29,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", :path => "provision/bootstrap.sh"
 
   # set file permissions
-  config.vm.synced_folder ".", "/vagrant", :mount_options => ["dmode=777", "fmode=666"]
+  config.vm.synced_folder ".", "/vagrant", :mount_options => ["dmode=777", "fmode=776"]
 
 end

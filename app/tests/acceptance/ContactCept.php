@@ -1,7 +1,7 @@
 <?php
 $I = new WebGuy($scenario);
 $I->wantTo('ensure that contact works');
-$I->amOnPage('?r=site/contact');
+$I->amOnPage('/site/contact');
 $I->see('Contact', 'h1');
 
 $I->submitForm('#contact-form', array());
@@ -39,4 +39,4 @@ $I->submitForm(
     )
 );
 $I->dontSeeElement('#contact-form');
-$I->see('Thank you for contacting us. We will respond to you as soon as possible.');
+$I->see('Thank you for cosntacting us. We will respond to you as soon as possible.');

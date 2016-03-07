@@ -40,3 +40,22 @@ heroku run "php -a"
 heroku run bash
 - ls, composer update.., exit
 
+
+
+
+
+
+
+############# testy
+
+alias t=vendor\bin\codecept run -c c:/www/yii
+
+// codeception http://codeception.com/docs/reference/Commands
+# run acceptance functional unit
+# wersja yii1 , php 5.4 , codeception 1.8.*!!!
+uruchamianie testów
+vendor\bin\codecept run -c c:/www/yii acceptance
+
+
+
+

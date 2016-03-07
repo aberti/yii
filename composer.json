@@ -23,9 +23,9 @@
 
     },
     "require-dev": {
-        "codeception/codeception": "@stable",
-        "malyshev/yii-debug-toolbar": "dev-master"
-        "mockery/mockery": "0.9.3",
+        "codeception/codeception": "1.8.*@stable",
+        "malyshev/yii-debug-toolbar": "dev-master",
+        "mockery/mockery": "0.9.3"
     },
     "suggest": {
         "crisu83/yii-auth": "1.6.*",

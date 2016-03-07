@@ -1,7 +1,7 @@
 <?php
 $I = new WebGuy($scenario);
 $I->wantTo('ensure that login works');
-$I->amOnPage('?r=site/login');
+$I->amOnPage('/site/login');
 $I->see('Application', 'h1');
 
 $I->submitForm('#login-form', array());
