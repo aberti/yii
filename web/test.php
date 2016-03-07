@@ -16,6 +16,8 @@ $config = ConfigHelper::merge(
         __DIR__ . '/../app/config/main.php',
         __DIR__ . '/../app/config/web.php',
         __DIR__ . '/../app/config/test.php',
+        __DIR__ . '/../app/config/main-environment.php',
+        __DIR__ . '/../app/config/test-local.php',
     )
 );
 

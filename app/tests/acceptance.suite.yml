@@ -15,4 +15,4 @@ modules:
         - WebHelper
     config:
         PhpBrowser:
-            url: 'http://localhost:31415/test.php'
+            url: 'http://localhost:4567/test.php'
