@@ -3,14 +3,16 @@ language: php
 php:
   - 5.4
 
-install:
-  - travis_retry composer install
+sudo: false
+
+cache:
+  - $HOME/.composer/cache/files
 
 before_script:
   - phpenv config-rm xdebug.ini || true
-  - COMPOSER_ROOT_VERSION=dev-master
   - /home/travis/.phpenv/versions/5.4/bin/composer self-update
-  - php /home/travis/.phpenv/versions/5.4/bin/composer.phar self-update
+  - composer global require "fxp/composer-asset-plugin:~1.0.0"
+  - composer install --prefer-source --no-interaction
 #  - app/yiic environment travis
   - php -S localhost:31415 -t web/ &
 
