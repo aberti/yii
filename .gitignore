@@ -3,12 +3,12 @@
 
 # environment files
 app/config/*-environment.php
-app/tests/acceptance.suite.yml
-app/tests/functional.suite.yml
+# app/tests/acceptance.suite.yml
+# app/tests/functional.suite.yml
 web/css/*
 web/js/*
 web/index.php
-web/test.php
+# web/test.php
 
 # local configurations
 app/config/*-local.php
