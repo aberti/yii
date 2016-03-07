@@ -3,10 +3,13 @@ language: php
 php:
   - 5.4
 
+install:
+  - travis_retry composer install
+
 before_script:
+  - phpenv config-rm xdebug.ini || true
   - COMPOSER_ROOT_VERSION=dev-master
-  - composer self-update
-  - composer install --prefer-source
+  - /home/travis/.phpenv/versions/5.4/bin/composer self-update
   - php /home/travis/.phpenv/versions/5.4/bin/composer.phar self-update
 #  - app/yiic environment travis
   - php -S localhost:31415 -t web/ &
