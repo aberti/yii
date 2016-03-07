@@ -4,12 +4,12 @@ php:
   - 5.4
 
 before_script:
-  - flags=""
-  - composer install
+  - COMPOSER_ROOT_VERSION=dev-master
+  - composer self-update
+  - composer install --prefer-source
+  - php /home/travis/.phpenv/versions/5.4/bin/composer.phar self-update
 #  - app/yiic environment travis
   - php -S localhost:31415 -t web/ &
-  - git config --global user.name aberti
-  - git config --global user.email travis@example.com
 
 script: vendor/bin/codecept run
 
