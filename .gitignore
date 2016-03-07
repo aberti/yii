@@ -21,6 +21,7 @@ web/files/*
 
 # composer
 vendor/*
+composer.lock
 
 # codeception
 codecept.phar
