@@ -6,6 +6,7 @@ php:
 before_script:
   - composer install --prefer-source
   - app/yiic environment travis
+  - php /home/travis/.phpenv/versions/5.4/bin/composer.phar self-update
   - php -S localhost:31415 -t web/ &
 
 script: vendor/bin/codecept run
