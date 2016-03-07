@@ -21,7 +21,6 @@ web/files/*
 
 # composer
 vendor/*
-composer.phar
 
 # codeception
 codecept.phar
