@@ -9,6 +9,7 @@ return array(
         'app' => 'application',
         'vendor' => realpath(__DIR__ . '/../../vendor'),
     ),
+    'modules' => array("aber"),
     // components to preload
     'preload' => array('log'),
     // paths to import

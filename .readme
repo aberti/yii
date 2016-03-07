@@ -1,0 +1,42 @@
+
+composer global remove {package-name}
+
+npm install --save-dev gulp
+
+
+
+heroku login
+heroku create
+git push heroku master
+heroku ps:scale web=1
+heroku open
+heroku logs --tail
+heroku ps
+
+// addons
+composer require herrera-io/silex-pdo
+composer require alrik11es/cowsayphp
+composer update
+git add .
+git commit -m "Demo"
+git push heroku master
+
+// czyszczenie z dodanych do gita śmieci
+git rm -r --cached .
+git add .gitignore
+git commit .gitignore
+git add .
+g
+
+heroku addons:create papertrail
+heroku addons
+heroku addons:open papertrail
+- papertrail
+
+
+// console
+heroku run "php -a"
+- quit
+heroku run bash
+- ls, composer update.., exit
+
